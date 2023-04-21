@@ -1,14 +1,15 @@
 <template>
   <div class="hello">
-    <h3>Installed CLI Plugins</h3>
     <ul>
       <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
-        >
+        <router-link to="/page-a">
+          page-a
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/page-b">
+          page-b
+        </router-link>
       </li>
     </ul>
   </div>

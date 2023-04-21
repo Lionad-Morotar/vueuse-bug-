@@ -1,6 +1,7 @@
 <template>
+  page-a
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 in CodeSandbox!" />
+  <HelloWorld msg="page-a" />
   <FullScreenButton />
 </template>
 
@@ -25,5 +26,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background: white;
 }
 </style>

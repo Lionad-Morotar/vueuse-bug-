@@ -1,16 +1,20 @@
 <template>
-  <el-button plain ref="fullscreenButtonRef" @click="toggle">
+  <button ref="fullscreenButtonRef" @click="toggle">
     <span>{{ isFullscreen ? "退出全屏" : "全屏" }}</span>
-  </el-button>
+  </button>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { ref } from "vue";
 import { useFullscreen } from "@vueuse/core";
 
+const $elem = document.querySelector('#app')
+
 const fullscreenButtonRef = ref();
-const { isFullscreen, toggle } = useFullscreen();
+const { isFullscreen, toggle } = useFullscreen($elem);
+
+console.log($elem, isFullscreen)
 </script>
 
-<style lang="less" scoped>
+<style>
 </style>
