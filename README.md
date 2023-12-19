@@ -1,6 +1,6 @@
 ## How to use
 
-duplicated, deprecated
+deprecated due to duplicated
 
 ```
 pnpm install
